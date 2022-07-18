@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dacc6ab5cbe7f994ca279438b4472f12, type: 3}
+  m_Name: Card1
+  m_EditorClassIdentifier: 
+  Type: RoadMonster
+  MonsterSprite:
+  - {fileID: 21300000, guid: 98c1a5f89f1805144896299e61a07bac, type: 3}
+  - {fileID: 21300000, guid: 4b0b3a6d0ae26e14d8458443391f9b3c, type: 3}
+  - {fileID: 21300000, guid: 0d9d9d9856e106b4ab35ba2f6f81ad0e, type: 3}
+  - {fileID: 21300000, guid: 9027e9ac910a3a64fbab13caf1763d49, type: 3}

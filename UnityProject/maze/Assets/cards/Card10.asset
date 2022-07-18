@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dacc6ab5cbe7f994ca279438b4472f12, type: 3}
+  m_Name: Card10
+  m_EditorClassIdentifier: 
+  Type: EarMonster
+  MonsterSprite:
+  - {fileID: 21300000, guid: 40d13c774e10f044195b2a40f1fe461f, type: 3}
+  - {fileID: 21300000, guid: 06c1d06b2d76daa49bb13831390cc368, type: 3}
+  - {fileID: 21300000, guid: 1e98b6877f4ff1a4597d9b110ed3a2e7, type: 3}
+  - {fileID: 21300000, guid: 50b2e32d53d46af4298b4482f74202c0, type: 3}
+  - {fileID: 21300000, guid: 435e1d0741d63b54db0116c2d4f62c8c, type: 3}
+  - {fileID: 21300000, guid: 85539c168b3ac7243a98ea6c6db7d55f, type: 3}

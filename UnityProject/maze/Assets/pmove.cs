@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class pmove : MonoBehaviour
 {
+    public int Gtally = 0;
+    public GameObject Help;
+    public GameObject HEncount;
+    public GameObject Encount;
     public Diceroller droll;
     public GameObject gameObjectToMove;
     //move with arrows
@@ -11,7 +15,7 @@ public class pmove : MonoBehaviour
     {
         if (droll.movement > 0)
         {
-            gameObjectToMove.transform.position = gameObjectToMove.transform.position + new Vector3(-55, 0, 0);
+            gameObjectToMove.transform.position = gameObjectToMove.transform.position + new Vector3(-90, 0, 0);
             droll.movement -= 1;
         }
         
@@ -20,7 +24,7 @@ public class pmove : MonoBehaviour
     {
         if (droll.movement > 0)
         {
-            gameObjectToMove.transform.position = gameObjectToMove.transform.position + new Vector3(55, 0, 0);
+            gameObjectToMove.transform.position = gameObjectToMove.transform.position + new Vector3(90, 0, 0);
             droll.movement -= 1;
         }
        
@@ -29,7 +33,7 @@ public class pmove : MonoBehaviour
     {
         if (droll.movement > 0)
         {
-            gameObjectToMove.transform.position = gameObjectToMove.transform.position + new Vector3(0, 40, 0);
+            gameObjectToMove.transform.position = gameObjectToMove.transform.position + new Vector3(0, 85, 0);
             droll.movement -= 1;
         }
         
@@ -39,7 +43,7 @@ public class pmove : MonoBehaviour
     {
         if (droll.movement > 0)
         {
-            gameObjectToMove.transform.position = gameObjectToMove.transform.position + new Vector3(0, -40, 0);
+            gameObjectToMove.transform.position = gameObjectToMove.transform.position + new Vector3(0, -85, 0);
             droll.movement -= 1;
         }
         
@@ -49,7 +53,9 @@ public class pmove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        HEncount.SetActive(false);
+        Help.SetActive(false);
+        Encount.SetActive(false);
     }
 
     // Update is called once per frame
@@ -59,6 +65,6 @@ public class pmove : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        print("collide!!");
+        
     }
 }

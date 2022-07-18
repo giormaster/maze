@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dacc6ab5cbe7f994ca279438b4472f12, type: 3}
+  m_Name: Card3
+  m_EditorClassIdentifier: 
+  Type: DoubtMonster
+  MonsterSprite:
+  - {fileID: 21300000, guid: dc32f84e6876a6b42b279f92ca088ed6, type: 3}
+  - {fileID: 21300000, guid: d05ef1d1f2133194c985298db34b60f0, type: 3}
+  - {fileID: 21300000, guid: 8da18d7b73def1a4d8f5f80bb33d9c44, type: 3}
+  - {fileID: 21300000, guid: a9c90a291374fad4f9a0f7cf9a53e4c4, type: 3}
+  - {fileID: 21300000, guid: 232f8af3491108b4c8254749d39c2058, type: 3}
