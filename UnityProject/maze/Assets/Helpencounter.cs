@@ -33,32 +33,12 @@ public class Helpencounter : MonoBehaviour
         }
         else
         {
-            bool done = false;
             int i;
-            i = Random.Range(0, Cards.Length);
-            while (done != true)
-            {
-                if (Cards[i].Got == true)
-                {
-                    if (i == 11)
-                    {
-                        i = 1;
-                    }
-                    else
-                    {
-                        i += 1;
-                    }
+            i = Random.Range(0, 11);
+            Helpencounterrender.sprite = Cards[i].GCardSprite;
+            Cards[i].Got = true;
+            player.Gtally += 1;
 
-                }
-                else
-                {
-                    done = true;
-                    Helpencounterrender.sprite = Cards[i].GCardSprite;
-                    Cards[i].Got = true;
-                    player.Gtally += 1;
-                }
-
-            }
         }
         
 

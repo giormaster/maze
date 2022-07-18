@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class collision_green : MonoBehaviour
 {
-    public Sprite Plate;
-    public SpriteRenderer Render;
+    public Sprite Plate2;
+    public SpriteRenderer Renderhelp;
     private bool finish = false;
     public Helpencounter Helpenc;
     public GameObject Encount;
@@ -13,7 +13,7 @@ public class collision_green : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Render = gameObject.GetComponent<SpriteRenderer>();
+        Renderhelp = gameObject.GetComponent<SpriteRenderer>();
 
     }
 
@@ -24,13 +24,14 @@ public class collision_green : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
+        
         if (finish == false)
         {
             Canv.SetActive(false);
             Encount.SetActive(true);
             finish = true;
-            Render.sprite = Plate;
             Helpenc.onhelp();
+            Renderhelp.sprite = Plate2;
         }
 
     }
