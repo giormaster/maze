@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MonsterEncounter : MonoBehaviour
 {
+    public pmove playerm;
+    public Diceroller player;
     public GameObject Canv;
     public GameObject CurrentEncounter;
     public SpriteRenderer encounterrender;
@@ -30,12 +32,15 @@ public class MonsterEncounter : MonoBehaviour
     }
     public void onpass()
     {
+        player.movement += Random.Range(1, 7) - player.movement;
         CurrentEncounter.SetActive(false);
         Canv.SetActive(true);
 
     }
     public void onfail()
     {
+        player.movement = 0;
+        playerm.turnchanger();
         CurrentEncounter.SetActive(false);
         Canv.SetActive(true);
     }

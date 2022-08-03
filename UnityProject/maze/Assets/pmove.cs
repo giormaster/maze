@@ -7,6 +7,12 @@ public enum Playerturn { PLAYER1, PLAYER2, PLAYER3, PLAYER4, PLAYER5 }
 
 public class pmove : MonoBehaviour
 {
+    //arrowcontroller
+    [SerializeField] private GameObject arrowup;
+    [SerializeField] private GameObject arrowdown;
+    [SerializeField] private GameObject arrowleft;
+    [SerializeField] private GameObject arrowright;
+    //
     public int Gtally = 0;
     public GameObject Playnumb;
     public GameObject Help;
@@ -22,6 +28,7 @@ public class pmove : MonoBehaviour
     {
         if (droll.movement > 0)
         {
+            onmoveactivation();
             gameObjectToMove.transform.position = gameObjectToMove.transform.position + new Vector3(-90, 0, 0);
             droll.movement -= 1;
             if (droll.movement == 0)
@@ -35,6 +42,7 @@ public class pmove : MonoBehaviour
     {
         if (droll.movement > 0)
         {
+            onmoveactivation();
             gameObjectToMove.transform.position = gameObjectToMove.transform.position + new Vector3(90, 0, 0);
             droll.movement -= 1;
             if (droll.movement == 0)
@@ -48,6 +56,7 @@ public class pmove : MonoBehaviour
     {
         if (droll.movement > 0)
         {
+            onmoveactivation();
             gameObjectToMove.transform.position = gameObjectToMove.transform.position + new Vector3(0, 85, 0);
             droll.movement -= 1;
             if (droll.movement == 0)
@@ -62,6 +71,7 @@ public class pmove : MonoBehaviour
     {
         if (droll.movement > 0)
         {
+            onmoveactivation();
             gameObjectToMove.transform.position = gameObjectToMove.transform.position + new Vector3(0, -85, 0);
             droll.movement -= 1;
             if (droll.movement == 0)
@@ -199,6 +209,13 @@ public class pmove : MonoBehaviour
     {
         players = pnumb;
         Playnumb.SetActive(false);
+    }
+    public void onmoveactivation()
+    {
+        arrowup.SetActive(true);
+        arrowdown.SetActive(true);
+        arrowleft.SetActive(true);
+        arrowright.SetActive(true);
     }
 
 }

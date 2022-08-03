@@ -25,14 +25,18 @@ public class collision_red : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (finish == false)
+        if (collider.gameObject.tag != "ignorer")
         {
-            Canv.SetActive(false);
-            Encount.SetActive(true);
-            MonstEnc.onencounter();
-            finish = true;
-            Render.sprite = Plate;
+            if (finish == false)
+            {
+                Canv.SetActive(false);
+                Encount.SetActive(true);
+                MonstEnc.onencounter();
+                finish = true;
+                Render.sprite = Plate;
+            }
         }
+        
         
     }
 }

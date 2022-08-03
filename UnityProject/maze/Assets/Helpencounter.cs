@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Helpencounter : MonoBehaviour
 {
@@ -21,7 +22,14 @@ public class Helpencounter : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            onclose();
+            if (player.Gtally == 12)
+            {
+                SceneManager.LoadScene("The maze menu");
+            }
+            else
+            {
+                onclose();
+            }
             
         }
     }

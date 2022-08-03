@@ -24,14 +24,16 @@ public class collision_green : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        
-        if (finish == false)
+        if (collider.gameObject.tag != "ignorer")
         {
-            Canv.SetActive(false);
-            Encount.SetActive(true);
-            finish = true;
-            Helpenc.onhelp();
-            Renderhelp.sprite = Plate2;
+            if (finish == false)
+            {
+                Canv.SetActive(false);
+                Encount.SetActive(true);
+                finish = true;
+                Helpenc.onhelp();
+                Renderhelp.sprite = Plate2;
+            }
         }
 
     }
