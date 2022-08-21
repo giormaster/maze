@@ -35,7 +35,7 @@ public class Helpencounter : MonoBehaviour
     }
     public void onhelp()
     {
-        if (player.Gtally == 12)
+        if (player.Gtally == 13)
         {
             Helpencounterrender.sprite = final;
         }

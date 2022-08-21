@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GCardSprite: {fileID: 21300000, guid: 292e8f21ce9c0e14c8ac78807cf0c025, type: 3}
   Type: 
-  Got: 1
+  Got: 0
